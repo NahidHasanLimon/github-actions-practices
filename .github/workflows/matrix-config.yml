@@ -10,9 +10,9 @@ jobs:
             matrix:
                 os: [ubuntu-latest,ubuntu-20.04]
                 images: [alpine,hello-world]
-        runs-on: ${{matrix.os}}
+        runs-on: ubuntu-latest
         steps:
             - name: Echo Docker Details
               run: docker info
-            - name: Run Image on ${{matrix.os}}
-              run: docker run ${{matrix.images}}
+            - name: Run Image on
+              run: docker run 
