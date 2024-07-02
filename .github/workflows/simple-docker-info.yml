@@ -1,0 +1,11 @@
+name: Matrix Configurations
+
+on:
+    push:
+    workflow_dispatch:
+jobs:
+    deplpy-on-ubuntu:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo Docker Details
+              run: docker info
