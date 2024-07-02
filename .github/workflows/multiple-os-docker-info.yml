@@ -15,7 +15,7 @@ jobs:
         - name: Echo Docker Details
           run: docker info
     docker-info-on-unbuntu-18:
-        runs-on: ubuntu-18.04
+        runs-on: ubuntu-20.04
         steps:
         - name: Echo Docker Details
           run: docker info
