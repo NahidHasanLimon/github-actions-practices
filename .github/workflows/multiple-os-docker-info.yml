@@ -1,0 +1,16 @@
+name: Multiple OS Docker info test
+
+on:
+    push:
+    workflow_dispatch:
+jobs:
+    docker-info-on-ubuntu:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo Docker Details
+              run: docker info
+    docker-info-on-windws:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Echo Docker Details
+          run: docker info
